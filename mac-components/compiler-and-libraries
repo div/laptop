@@ -4,5 +4,7 @@ fancy_echo "Installing GNU Compiler Collection, a necessary prerequisite to inst
 
 fancy_echo "Upgrading and linking OpenSSL ..."
   brew install openssl
+  brew install readline
+
 
 export CC=gcc-4.2

@@ -1,5 +1,5 @@
 fancy_echo "Installing Ruby 2.0.0-p247 ..."
-  ruby-build 2.1.0-preview1 ~/.rubies/ruby-2.1.0-preview1
+  CONFIGURE_OPTS="--with-openssl-dir=brew --prefix openssl --with-readline-dir=brew --prefix readline" ruby-build 2.1.0-preview1 ~/.rubies/ruby-2.1.0-preview1
 
 fancy_echo "Setting Ruby 2.0.0-p247 as global default Ruby ..."
   chruby 2.1.0-preview1
