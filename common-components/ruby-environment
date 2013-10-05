@@ -1,15 +1,14 @@
 fancy_echo "Installing Ruby 2.0.0-p247 ..."
-  rbenv install 2.0.0-p247
+  ruby-build 2.1.0-preview1 ~/.rubies/ruby-2.1.0-preview1
 
 fancy_echo "Setting Ruby 2.0.0-p247 as global default Ruby ..."
-  rbenv global 2.0.0-p247
-  rbenv rehash
+  chruby 2.1.0-preview1
 
 fancy_echo "Updating to latest Rubygems version ..."
   gem update --system
 
 fancy_echo "Installing critical Ruby gems for Rails development ..."
-  gem install bundler pg rails unicorn --no-document
+  gem install bundler rails --no-document
 
 fancy_echo "Installing GitHub CLI client ..."
   curl http://hub.github.com/standalone -sLo ~/.bin/hub

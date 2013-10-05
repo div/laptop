@@ -5,9 +5,6 @@ fancy_echo "Installing Postgres, a good open source relational database ..."
 fancy_echo "Installing Redis, a good key-value database ..."
   brew install redis
 
-fancy_echo "Installing The Silver Searcher (better than ack or grep) to search the contents of files ..."
-  brew install the_silver_searcher
-
 fancy_echo "Installing vim from Homebrew to get the latest version ..."
   brew install vim
 
@@ -26,5 +23,3 @@ fancy_echo "Installing ImageMagick, to crop and resize images ..."
 fancy_echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
   brew install qt
 
-fancy_echo "Installing watch, to execute a program periodically and show the output ..."
-  brew install watch
