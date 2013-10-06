@@ -81,7 +81,7 @@ export CC=gcc-4.2
 ### end mac-components/compiler-and-libraries
 
 fancy_echo "Installing Ruby 2.1.0-preview1 ..."
-  CONFIGURE_OPTS="--with-openssl-dir=brew --prefix openssl --with-readline-dir=brew --prefix readline" ruby-build 2.1.0-preview1 ~/.rubies/ruby-2.1.0-preview1
+  CONFIGURE_OPTS="--with-openssl-dir'=brew --prefix openssl' --with-readline-dir='brew --prefix readline'" ruby-build 2.1.0-preview1 ~/.rubies/ruby-2.1.0-preview1
 
 fancy_echo "Setting Ruby 2.1.0-preview1 as global default Ruby ..."
   chruby 2.1.0-preview1
